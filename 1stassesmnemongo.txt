@@ -1,0 +1,14 @@
+1  db.assesment.find().pretty()
+2  db.assesment.find({"writer": "Quentin Tarantino"}).pretty()
+
+3    db.asesment.find({"actors" : "Brad Pitt"}).pretty()
+4    db.assesment.find({franchise: "The Hobbit"})
+5   db.assesment.find({year:{$gt:"1990", $lt:"2000"}})
+6    db.asesment.find({$or: [{year: {$lt: 2000}}, {year: {$gt: 2010}}]})
+7     db.assesment.find()count("writer")
+8     db.assesment.update({_id:ObjectId("5c9f983ce5c2dfe9b3729bfc")}, {$push:{actors:"Samuel L. Jackson"}})
+9     db.assesment.find({synopsis:{$regex:"Gandalf"}})
+10     db.assesment.find().sort({year: -1})
+11     db.assesment.find().sort()
+
+
